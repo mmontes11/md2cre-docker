@@ -1,6 +1,6 @@
 # md2cre-docker
 
-Markdown to Creole converter in a Docker container.
+Markdown to [Creole](https://mariadb.com/kb/en/meta/creole-formatting/) converter in a Docker container.
 
 ### Usage
 

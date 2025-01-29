@@ -1,7 +1,7 @@
 import sys
 import re
 
-# spec: https://mariadb.com/kb/en/meta/editing-help/
+# spec: https://mariadb.com/kb/en/meta/creole-formatting/
 def md_to_creole(md_text):
     # Headings: Convert Markdown # to Creole ==
     md_text = re.sub(r'^# (.*)', r'== \1 ==', md_text, flags=re.MULTILINE)
