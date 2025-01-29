@@ -5,6 +5,30 @@
 
 `mariadb-operator` supports issuing, configuring and rotating TLS certiticates for both your `MariaDB` and `MaxScale` resources. It aims to be secure by default, for this reason, TLS certificates are issued and configured by the operator as a default behaviour.
 
+## Table of contents
+<!-- toc -->
+- [`MariaDB` configuration](#mariadb-configuration)
+- [`MaxScale` configuration](#maxscale-configuration)
+- [`MariaDB` certificate specification](#mariadb-certificate-specification)
+- [`MaxScale` certificate specification](#maxscale-certificate-specification)
+- [CA bundle](#ca-bundle)
+- [Issue certificates with mariadb-operator](#issue-certificates-with-mariadb-operator)
+- [Issue certificates with cert-manager](#issue-certificates-with-cert-manager)
+- [Provide your own certificates](#provide-your-own-certificates)
+- [Bring your own CA](#bring-your-own-ca)
+- [Intermediate CAs](#intermediate-cas)
+- [Custom trust](#custom-trust)
+- [Distributing trust](#distributing-trust)
+- [CA renewal](#ca-renewal)
+- [Certificate renewal](#certificate-renewal)
+- [Certificate status](#certificate-status)
+- [TLS requirements for `Users`](#tls-requirements-for-users)
+- [Secure application connections with TLS](#secure-application-connections-with-tls)
+- [Test TLS certificates with `Connections`](#test-tls-certificates-with-connections)
+- [Enabling TLS in existing instances](#enabling-tls-in-existing-instances)
+- [Limitations](#limitations)
+<!-- /toc -->
+
 ## `MariaDB` configuration
 
 > [!IMPORTANT]  

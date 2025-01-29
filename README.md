@@ -1,10 +1,10 @@
 # md2cre-docker
 
-Dockerized version of [md2cre](https://gist.github.com/mxswd/3158772)
+Markdown to Creole converter in a Docker container.
 
 ### Usage
 
 ```bash
 docker build -t md2cre .
-docker run --rm -v $(pwd):/usr/src/app md2cre example.md > example.txt
+docker run --rm -v $(pwd):/usr/src/app md2cre docs/API_REFERENCE.md > result.txt
 ``` 
